@@ -6,7 +6,9 @@ This Python program simulates an Indian coffee machine, offering a variety of dr
 
 2.Payment Options:
    i.Cash (gives change if needed)
+   
   ii.UPI (simulated QR code payment)
+  
  iii.Card (simulated card payment)
  
 3.Stock Management: Tracks ingredients and alerts if low stock.
@@ -21,4 +23,5 @@ This Python program simulates an Indian coffee machine, offering a variety of dr
 
 # Requirements
 1.Python 3.x
+
 2.Basic understanding of Python concepts (functions, loops, dictionaries)

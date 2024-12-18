@@ -76,12 +76,12 @@ def process_payment(drink_cost):
             print("Sorry, that's not enough money. Money refunded.")
             return False
     elif payment_method == "2":
-        print("Please scan the UPI QR code to pay ₹{}.".format(drink_cost))
+        print(f"Please scan the UPI QR code to pay ₹{drink_cost}.")
         print("UPI payment successful.")
         profit += drink_cost
         return True
     elif payment_method == "3":
-        print("Processing card payment for ₹{}...".format(drink_cost))
+        print(f"Processing card payment for ₹{drink_cost}...")
         print("Card payment successful.")
         profit += drink_cost
         return True
@@ -89,12 +89,17 @@ def process_payment(drink_cost):
         print("Invalid payment method. Transaction canceled.")
         return False
 
-
 # Function to make coffee
 def make_coffee(drink_name, order_ingredients):
     for item in order_ingredients:
         resources[item] -= order_ingredients[item]
     print(f"Here’s your {drink_name} ☕. Enjoy!")
+
+# Function to display the menu with prices
+def display_menu():
+    print("\nMenu:")
+    for drink, details in MENU.items():
+        print(f"{drink.capitalize()} - ₹{details['cost']}")
 
 # Function to refill resources
 def refill_resources():
@@ -115,7 +120,8 @@ def maintenance():
 is_on = True
 
 while is_on:
-    choice = input("What would you like? (espresso/latte/cappuccino/masala chai/filter coffee/report/refill/maintenance/off): ").lower()
+    display_menu()
+    choice = input("\nWhat would you like? (espresso/latte/cappuccino/masala chai/filter coffee/report/refill/maintenance/off): ").lower()
     if choice == "off":
         is_on = False
     elif choice == "report":

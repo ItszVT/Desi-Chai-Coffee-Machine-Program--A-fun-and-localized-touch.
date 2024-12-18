@@ -3,14 +3,20 @@ This Python program simulates an Indian coffee machine, offering a variety of dr
 
 # Features
 1.Menu: Select from Indian and global beverages with prices in ₹.
+
 2.Payment Options:
    i.Cash (gives change if needed)
   ii.UPI (simulated QR code payment)
  iii.Card (simulated card payment)
+ 
 3.Stock Management: Tracks ingredients and alerts if low stock.
+
 4.Sugar Customization: Choose your sugar level (low, medium, high).
+
 5.Maintenance: Refills ingredients and allows cleaning.
+
 6.Reports: Displays current stock levels and total profit earned.
+
 7.Exit: Gracefully shuts down the machine.
 
 # Requirements

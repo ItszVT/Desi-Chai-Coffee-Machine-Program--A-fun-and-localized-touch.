@@ -23,6 +23,6 @@ This Python program simulates an Indian coffee machine, offering a variety of dr
 7. Exit: Gracefully shuts down the machine.
 
 # Requirements
-1.Python 3.x
+1.  Python 3.x
 
-2.Basic understanding of Python concepts (functions, loops, dictionaries)
+2.  Basic understanding of Python concepts (functions, loops, dictionaries)
